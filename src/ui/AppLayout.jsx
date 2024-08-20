@@ -5,12 +5,13 @@ import Header from "./Header";
 const StyledAppLayout = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
 `;
 
 const Main = styled.main`
   background-color: var(--color-grey-50);
   padding: 4rem 4.8rem 6.4rem;
+  overflow: auto;
+  height: 100%;
   overflow: auto;
 `;
 

@@ -1,5 +1,7 @@
+import AboutLayout from "../components/About/AboutLayout";
+
 function About() {
-  return <div></div>;
+  return <AboutLayout />;
 }
 
 export default About;
