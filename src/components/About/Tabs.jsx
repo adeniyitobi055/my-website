@@ -23,6 +23,8 @@ const TabContent = styled.div`
 
   & ul {
     height: 230px;
+    max-width: 400px;
+    word-wrap: break-word;
   }
 
   & li {
@@ -89,7 +91,7 @@ function Tabs() {
             <li>
               <span>MySQL || Postgress</span>
               <br />
-              Design & Create a scalable database
+              Design, create a scalable database & implement complex APIs
             </li>
           </ul>
         </TabContent>
