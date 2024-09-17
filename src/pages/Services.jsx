@@ -1,5 +1,7 @@
+import ServicesLayout from "../components/Services/ServicesLayout";
+
 function Services() {
-  return <div></div>;
+  return <ServicesLayout />;
 }
 
 export default Services;

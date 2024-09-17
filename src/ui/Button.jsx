@@ -56,6 +56,11 @@ const Button = styled.button`
 
   ${(props) => sizes[props.size]}
   ${(props) => variations[props.variation]}
+
+  &:hover {
+    background-color: ${(props) =>
+      props.isActive ? "var(--color-brand-700)" : "var(--color-red-700)"};
+  }
 `;
 
 Button.defaultProps = {

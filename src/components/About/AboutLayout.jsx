@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import AboutImage from "./AboutImage";
 import AboutText from "./AboutText";
+import StyledHeading from "../../ui/StyledHeading";
 
 const Main = styled.div`
   display: flex;
@@ -18,15 +19,6 @@ const StyledAboutLayout = styled.div`
   margin: auto;
   max-width: 170rem;
   gap: 6rem;
-`;
-
-const StyledHeading = styled.h1`
-  font-size: 40px;
-  text-align: center;
-  margin: auto;
-  text-transform: capitalize;
-  font-weight: 400;
-  padding: 0;
 `;
 
 function AboutLayout() {

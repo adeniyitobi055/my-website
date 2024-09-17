@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Button from "../../ui/Button";
 import { useState } from "react";
+import LinkIcon from "../../ui/LinkIcon";
 
 const Tab = styled.div`
   display: flex;
@@ -40,6 +41,25 @@ const ButtonContainer = styled.div`
   gap: 20px;
 `;
 
+const Div = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: left;
+  align-items: center;
+
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gold-100);
+  }
+
+  & a:hover {
+    color: var(--color-red-700);
+  }
+`;
+
 function Tabs() {
   const [activeTab, setActiveTab] = useState("skills");
 
@@ -50,6 +70,7 @@ function Tabs() {
           variation={activeTab === "skills" ? "danger" : "primary"}
           size="small"
           onClick={() => setActiveTab("skills")}
+          disabled={activeTab === "skills"}
         >
           Skills
         </Button>
@@ -57,6 +78,7 @@ function Tabs() {
           variation={activeTab === "education" ? "danger" : "primary"}
           size="small"
           onClick={() => setActiveTab("education")}
+          disabled={activeTab === "education"}
         >
           Education
         </Button>
@@ -64,6 +86,7 @@ function Tabs() {
           variation={activeTab === "experience" ? "danger" : "primary"}
           size="small"
           onClick={() => setActiveTab("experience")}
+          disabled={activeTab === "experience"}
         >
           Experience
         </Button>
@@ -71,6 +94,7 @@ function Tabs() {
           variation={activeTab === "certification" ? "danger" : "primary"}
           size="small"
           onClick={() => setActiveTab("certification")}
+          disabled={activeTab === "certification"}
         >
           Certification
         </Button>
@@ -100,21 +124,126 @@ function Tabs() {
         <TabContent>
           <ul>
             <li>
-              <span>ALX</span>
+              <span>ALX - Holberton School || Nov 30, 2023</span>
               <br />
-              Software Engineering
+              <Div>
+                Full-Stack Software Engineering{" "}
+                <a
+                  href="https://www.alxafrica.com/"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
+                  <LinkIcon />
+                </a>
+              </Div>
+            </li>
+            <li>
+              <span>Adeleke University || July 19, 2020</span>
+              <br />
+              <Div>
+                B.Sc Computer Science{" "}
+                <a
+                  href="https://adelekeuniversity.edu.ng/"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
+                  <LinkIcon />
+                </a>
+              </Div>
             </li>
           </ul>
         </TabContent>
       )}
       {activeTab === "experience" && (
         <TabContent>
-          <ul></ul>
+          <ul>
+            <li>
+              <span>First Bank of Nigeria LTD || May 2024</span>
+              <br />
+              <Div>
+                Software Developer - Frontend
+                <a
+                  href="https://www.firstbanknigeria.com/"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
+                  <LinkIcon />
+                </a>
+              </Div>
+            </li>
+            <li>
+              <span>Euro Scholars Poland || Nov 2021 - Mar 2022</span>
+              <br />
+              <Div>
+                Technical Support
+                <a
+                  href="https://euroscholars.pl/"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
+                  <LinkIcon />
+                </a>
+              </Div>
+            </li>
+            <li>
+              <span>First Bank of Nigeria LTD || Feb 2019 - Sep 2019</span>
+              <Div>
+                Intern
+                <a
+                  href="https://www.firstbanknigeria.com/"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
+                  <LinkIcon />
+                </a>
+              </Div>
+            </li>
+          </ul>
         </TabContent>
       )}
       {activeTab === "certification" && (
         <TabContent>
-          <ul></ul>
+          <ul>
+            <li>
+              <span>Freecodecamp || Aug 2, 2023</span>
+              <Div>
+                Responsive Web Design
+                <a
+                  href="https://www.freecodecamp.org/certification/Adeniyi_Tobi/responsive-web-design"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
+                  <LinkIcon />
+                </a>
+              </Div>
+            </li>
+            <li>
+              <span>Freecodecamp || Aug 16, 2023</span>
+              <Div>
+                JavaScript Algorithms & Data Structures
+                <a
+                  href="https://www.freecodecamp.org/certification/Adeniyi_Tobi/javascript-algorithms-and-data-structures"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
+                  <LinkIcon />
+                </a>
+              </Div>
+            </li>
+            <li>
+              <span>Freecodecamp || Sep 15, 2023</span>
+              <Div>
+                Frontend Development Libraries
+                <a
+                  href="https://www.freecodecamp.org/certification/Adeniyi_Tobi/front-end-development-libraries"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
+                  <LinkIcon />
+                </a>
+              </Div>
+            </li>
+          </ul>
         </TabContent>
       )}
     </Tab>

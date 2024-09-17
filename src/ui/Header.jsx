@@ -11,6 +11,8 @@ const StyledHeader = styled.header`
   flex-direction: row;
   justify-content: space-between;
   gap: 1.5rem;
+  position: fixed;
+  width: 100%;
   /* grid-row: 1 / -1; */
 `;
 

@@ -1,0 +1,78 @@
+import styled from "styled-components";
+import StyledHeading from "../../ui/StyledHeading";
+import ServiceCard from "../../ui/ServiceCard";
+import { BsCodeSlash } from "react-icons/bs";
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+
+const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  overflow: hidden;
+`;
+
+const StyledServicesLayout = styled.div`
+  background-color: var(--color-grey-50);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 120rem;
+  padding: 0 2rem;
+  gap: 6rem;
+`;
+
+const StyledServiceContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 30px;
+  margin: 50px auto;
+  width: 120rem;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+
+  & > *:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-content: center;
+    width: 50%;
+  }
+`;
+
+function ServicesLayout() {
+  return (
+    <Main>
+      <StyledHeading>My Portfolio</StyledHeading>
+      <StyledServicesLayout>
+        <StyledServiceContainer>
+          {/* <ServiceCard
+            icon={<BsCodeSlash />}
+            title="Web Development"
+            description="Design and develop responsive and visually appealing websites. Ensure cross-browser, enhance user experience and optimise performance for fast, efficient loading."
+            linkText="Learn more"
+            link="https://brainstation.io/career-guides/what-is-web-development"
+          /> */}
+          <ServiceCard
+            icon={<FaReact />}
+            title="Front-End Development with React.js"
+            description=" Build highly interactive, dynamic web applications using the React JavaScript library. Implement efficient user interfaces for complex, data-driven experiences while maintaining seamless user interaction."
+            link="https://www.hotjar.com/web-app-design/"
+            linkText="Learn more"
+          />
+          <ServiceCard
+            icon={<FaNodeJs />}
+            title="Back-End Development with Node.js"
+            description="Develop scalable, high-performance server-side applications using Node.js. Handle asynchronous operations, build APIs, and manage data with minimal overhead, ensuring real-time performance for web applications."
+            linkText="Learn more"
+            link="https://www.hotjar.com/web-app-design/"
+          />
+        </StyledServiceContainer>
+      </StyledServicesLayout>
+    </Main>
+  );
+}
+
+export default ServicesLayout;
