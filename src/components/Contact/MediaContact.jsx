@@ -26,7 +26,7 @@ const Row = styled.div`
 
 const Icon = styled.div`
   font-size: 2.5rem;
-  color: var(--color-red-700);
+  color: var(--color-grey-600);
   margin-top: 0.5rem;
 `;
 
@@ -41,7 +41,7 @@ const IconsContainer = styled.div`
 
 const Icons = styled.div`
   display: inline-block;
-  color: var(--color-grey-900);
+  color: var(--color-grey-600);
   font-size: 3.2rem;
   transition: color 0.5s, transform 0.5s;
 
