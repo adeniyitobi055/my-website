@@ -13,6 +13,7 @@ const StyledHeader = styled.header`
   gap: 1.5rem;
   position: fixed;
   width: 100%;
+  z-index: 1000;
   /* grid-row: 1 / -1; */
 `;
 

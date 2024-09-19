@@ -1,5 +1,7 @@
+import ContactLayout from "../components/Contact/ContactLayout";
+
 function Contact() {
-  return <div></div>;
+  return <ContactLayout />;
 }
 
 export default Contact;

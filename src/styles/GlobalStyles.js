@@ -45,6 +45,7 @@ const GlobalStyles = createGlobalStyle`
     --color-gold-700: #504107;
     --color-gold-800:#282003;
 
+    --color-folly-100:#ff004f;
     
     
     --backdrop-color: rgba(255, 255, 255, 0.1);
@@ -55,6 +56,8 @@ const GlobalStyles = createGlobalStyle`
 
     --image-grayscale: 0;
     --image-opacity: 100%;
+
+    --color-gray-100:#374151;
 }
 
   &.dark-mode {
@@ -94,6 +97,8 @@ const GlobalStyles = createGlobalStyle`
     --image-grayscale: 10%;
     --image-opacity: 90%;
 
+    --color-folly-100:#ff004f;
+
     --color-bronze-100:#ce8946;
     --color-bronze-700:#4A3004;
     --color-bronze-800: #CD7F32;
@@ -105,6 +110,8 @@ const GlobalStyles = createGlobalStyle`
     --color-gold-100:#CDB450;
     --color-gold-700: #504107;
     --color-gold-900:#282003;
+
+    --color-gray-100:#a8a8a8;
   }
 
   /* Indigo */
@@ -117,10 +124,14 @@ const GlobalStyles = createGlobalStyle`
   --color-brand-800: #3730a3;
   --color-brand-900: #312e81;
 
+  
+
   --border-radius-tiny: 3px;
   --border-radius-sm: 5px;
   --border-radius-md: 7px;
   --border-radius-lg: 9px;
+
+  --translateX: 0%;
 
  
 }

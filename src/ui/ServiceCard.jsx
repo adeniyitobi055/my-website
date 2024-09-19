@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const ServiceLayout = styled.div`
-  background: var(--color-grey-700);
-  width: 95%;
+  background: var(--color-grey-800);
+  width: 100%;
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
@@ -10,7 +10,6 @@ const ServiceLayout = styled.div`
   transition: background 0.5s, transform 0.5s;
   margin: auto;
   color: var(--color-grey-0);
-  height: 100%;
 
   & h3 {
     font-size: 25px;
@@ -28,6 +27,12 @@ const ServiceLayout = styled.div`
     display: inline-block;
     font-size: 12px;
     margin-top: 20px;
+  }
+
+  &:hover {
+    background: var(--color-red-700);
+    transform: translateY(-10px);
+    color: white;
   }
 `;
 

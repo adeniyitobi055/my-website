@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import StyledHeading from "../../ui/StyledHeading";
 import ServiceCard from "../../ui/ServiceCard";
-import { BsCodeSlash } from "react-icons/bs";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 
@@ -13,7 +12,7 @@ const Main = styled.div`
 `;
 
 const StyledServicesLayout = styled.div`
-  background-color: var(--color-grey-50);
+  background: var(--color-grey-50);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,16 +44,9 @@ const StyledServiceContainer = styled.div`
 function ServicesLayout() {
   return (
     <Main>
-      <StyledHeading>My Portfolio</StyledHeading>
+      <StyledHeading>My Services</StyledHeading>
       <StyledServicesLayout>
         <StyledServiceContainer>
-          {/* <ServiceCard
-            icon={<BsCodeSlash />}
-            title="Web Development"
-            description="Design and develop responsive and visually appealing websites. Ensure cross-browser, enhance user experience and optimise performance for fast, efficient loading."
-            linkText="Learn more"
-            link="https://brainstation.io/career-guides/what-is-web-development"
-          /> */}
           <ServiceCard
             icon={<FaReact />}
             title="Front-End Development with React.js"
