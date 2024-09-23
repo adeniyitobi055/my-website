@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Input from "../../ui/Input";
 import Textarea from "../../ui/Textarea";
 import Button from "../../ui/Button";
-import { useState } from "react";
 import toast from "react-hot-toast";
 import axios from "axios";
 
@@ -19,26 +18,16 @@ const Form = styled.form`
 `;
 
 function ContactForm() {
-  const [formData, setFormData] = useState({
-    Name: "",
-    Email: "",
-    Message: "",
-  });
-
-  //   const [status, setStatus] = useState("");
-
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycby5TvivWYQ0S29_KKFJxFyArYAJJgSqTdAoD-46b7s/dev";
+    "https://script.google.com/macros/s/AKfycbxLJ4sL5gqkjpHajB1pRwYj5k9GthfuEPs_oYRaKIcZlui5WHoOsabHfMPqXT1-7Slt/exec";
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
+    const form = document.querySelector("Form");
+    const formData = new FormData(form);
     e.preventDefault();
     try {
-      const response = await axios.post(scriptURL, formData, {
-        headers: { "Content-Type": "application/json" },
+      const response = axios.post(scriptURL, formData, {
+        body: formData,
       });
       toast.success("Message sent successfully", response.data);
     } catch (error) {
@@ -48,29 +37,14 @@ function ContactForm() {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
-      <Input
-        name="Name"
-        type="text"
-        placeholder="Your name"
-        required
-        value={formData.Name}
-        onChange={handleChange}
-      />
-      <Input
-        name="Email"
-        type="email"
-        placeholder="Your email"
-        required
-        value={formData.Email}
-        onChange={handleChange}
-      />
+    <Form onSubmit={(e) => handleSubmit(e)} name="Form">
+      <Input name="Name" type="text" placeholder="Your name" required />
+      <Input name="Email" type="email" placeholder="Your email" required />
       <Textarea
         name="Message"
         placeholder="Your message"
         required
-        value={formData.Message}
-        onChange={handleChange}
+        type="text"
       />
       <Button type="submit">Send Message</Button>
     </Form>
