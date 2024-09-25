@@ -21,6 +21,10 @@ const StyledServicesLayout = styled.div`
   max-width: 120rem;
   padding: 0 2rem;
   gap: 6rem;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    flex-direction: column;
+  }
 `;
 
 const StyledServiceContainer = styled.div`
@@ -34,10 +38,30 @@ const StyledServiceContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  & > *:nth-child(3) {
+  /*  & > *:nth-child(3) {
     grid-column: 1 / -1;
     justify-content: center;
     width: 50%;
+  } */
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 426px) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 25px auto;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
 `;
 

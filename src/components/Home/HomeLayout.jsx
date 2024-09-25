@@ -11,6 +11,20 @@ const StyledHomeLayout = styled.div`
   margin: auto;
   max-width: 170rem;
   gap: 6rem;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 426px) {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
 `;
 
 function HomeLayout() {

@@ -25,6 +25,15 @@ const StyledPortfolioLayout = styled.div`
   max-width: 120rem;
   padding: 0 2rem;
   gap: 6rem;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 0.5rem;
+    gap: 1.5rem;
+    padding: 0;
+    width: 100%;
+  }
 `;
 
 const StyledPortfolioContainer = styled.div`
@@ -37,6 +46,28 @@ const StyledPortfolioContainer = styled.div`
   max-width: 1200px;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 100%;
+    width: 98%;
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 426px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
 `;
 
 function PortfolioLayout() {

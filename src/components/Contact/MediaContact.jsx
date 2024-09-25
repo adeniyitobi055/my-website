@@ -15,19 +15,54 @@ const Container = styled.div`
   margin: 50px auto;
   /* width: 120rem; */
   max-width: 1200px;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    max-width: 100%;
+    margin: 11px auto;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 426px) {
+    max-width: 100%;
+    margin: 0;
+  }
 `;
 
 const Row = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    font-size: 1.45rem;
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 426px) {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+    font-size: 1.7rem;
+  }
 `;
 
 const Icon = styled.div`
   font-size: 2.5rem;
   color: var(--color-grey-600);
   margin-top: 0.5rem;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 426px) {
+    font-size: 2.2rem;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+    font-size: 2.4rem;
+  }
 `;
 
 const IconsContainer = styled.div`
@@ -37,6 +72,14 @@ const IconsContainer = styled.div`
   height: 3.6rem;
   /* justify-content: center; */
   /* align-items: center; */
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    height: 1.2rem;
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 426px) {
+    height: 1.5rem;
+  }
 `;
 
 const Icons = styled.div`
@@ -48,6 +91,10 @@ const Icons = styled.div`
   &:hover {
     color: var(--color-red-700);
     transform: translateY(-5px);
+  }
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    font-size: 2.7rem;
   }
 `;
 

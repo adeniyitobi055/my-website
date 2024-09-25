@@ -7,6 +7,10 @@ const Tab = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    gap: 10px;
+  }
 `;
 
 const TabContent = styled.div`
@@ -15,7 +19,7 @@ const TabContent = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   /* padding-top: 13px; */
-  font-size: 16px;
+  font-size: 15px;
 
   & span {
     font-size: 15px;
@@ -31,6 +35,22 @@ const TabContent = styled.div`
   & li {
     padding-top: 10px;
   }
+
+  @media screen and (max-width: 320px) {
+    font-size: 12.3px;
+
+    & span {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 425px) and (min-width: 375px) {
+    font-size: 13.5px;
+
+    & span {
+      font-size: 14px;
+    }
+  }
 `;
 
 const ButtonContainer = styled.div`
@@ -39,6 +59,14 @@ const ButtonContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    gap: 13px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+  }
 `;
 
 const Div = styled.div`
@@ -57,6 +85,9 @@ const Div = styled.div`
 
   & a:hover {
     color: var(--color-red-700);
+  }
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
   }
 `;
 

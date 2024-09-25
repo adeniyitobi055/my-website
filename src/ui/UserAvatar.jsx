@@ -8,6 +8,12 @@ const StyledUserIcon = styled.div`
   font-size: 1.4rem;
   color: var(--color-grey-600);
   margin-right: auto;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    & span {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 const Avatar = styled.img`

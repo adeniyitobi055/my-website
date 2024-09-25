@@ -78,8 +78,8 @@ const Description = styled.div`
     font-size: 12px;
     line-height: 28px;
     background: white;
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     text-align: center;
     transition: transform 0.3s ease;
@@ -88,6 +88,71 @@ const Description = styled.div`
 
   & a:hover {
     transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 320px) {
+    & h3 {
+      font-weight: 500;
+      margin: 1.5px 0;
+      font-size: 15px;
+    }
+
+    & p {
+      font-weight: 400;
+      font-size: 11px;
+      margin: 1.5px 0;
+      padding: 0 1.2rem;
+    }
+
+    & a {
+      font-size: 8px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+  @media screen and (max-width: 425px) and (min-width: 375px) {
+    & h3 {
+      font-weight: 500;
+      margin: 1.5px 0;
+      font-size: 18px;
+    }
+
+    & p {
+      font-weight: 400;
+      font-size: 13px;
+      margin: 1.5px 0;
+      padding: 0 1.2rem;
+    }
+
+    & a {
+      font-size: 12px;
+      width: 21px;
+      height: 21px;
+      line-height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+    & h3 {
+      font-weight: 500;
+      margin: 1.5px 0;
+      font-size: 22px;
+    }
+
+    & p {
+      font-weight: 400;
+      font-size: 15px;
+      margin: 1.5px 0;
+      padding: 0 1.2rem;
+    }
+
+    & a {
+      font-size: 12px;
+      width: 21px;
+      height: 21px;
+      line-height: 20px;
+    }
   }
 `;
 
@@ -118,7 +183,7 @@ function PortfolioCard({ images = [], description, title, link }) {
         <h3>{title}</h3>
         <p>{description}</p>
         <a href={link} target="_blank" rel="noopner noreferrer">
-          <TbExternalLink style={{ fontSize: "20px", marginTop: "4px" }} />
+          <TbExternalLink style={{ fontSize: "17px", marginTop: "1px" }} />
         </a>
       </Description>
     </ImageLayout>

@@ -9,6 +9,12 @@ const StyledUserIcon = styled.div`
   color: var(--color-grey-600);
   justify-content: flex-end;
   /* padding-top: 5rem; */
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    gap: 0.7rem;
+    font-weight: 400;
+    font-size: 1rem;
+  }
 `;
 
 const Image = styled.img`
@@ -20,6 +26,21 @@ const Image = styled.img`
   border-radius: 50%;
   /* outline: 2px solid var(--color-grey-100); */
   opacity: 0.9;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    width: 70%;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 426px) {
+    width: 40%;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+    width: 35rem;
+    margin: auto;
+  }
 `;
 
 function AboutImage() {

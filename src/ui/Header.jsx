@@ -15,6 +15,10 @@ const StyledHeader = styled.header`
   width: 100%;
   z-index: 1000;
   /* grid-row: 1 / -1; */
+
+  @media screen and (max-width: 425px) {
+    padding: 1.5rem 3rem;
+  }
 `;
 
 function Header() {

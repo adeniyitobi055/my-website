@@ -8,6 +8,7 @@ const Main = styled.div`
   flex-direction: column;
   gap: 6rem;
   overflow: hidden;
+  width: 100%;
 `;
 
 const StyledContactLayout = styled.div`
@@ -20,6 +21,22 @@ const StyledContactLayout = styled.div`
   max-width: 120rem;
   padding: 0 2rem;
   gap: 6rem;
+
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    gap: 3rem;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+    /* padding: 0; */
+    gap: 6rem;
+  }
 `;
 
 function ContactLayout() {

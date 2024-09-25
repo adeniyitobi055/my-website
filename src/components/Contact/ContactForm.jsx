@@ -16,6 +16,20 @@ const Form = styled.form`
   max-width: 1200px;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    gap: 2rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 15px auto;
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 426px) {
+    gap: 2.2rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 15px auto;
+  }
 `;
 
 function ContactForm() {
