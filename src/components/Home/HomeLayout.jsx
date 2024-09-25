@@ -15,7 +15,7 @@ const StyledHomeLayout = styled.div`
 
   @media screen and (max-width: 425px) and (min-width: 320px) {
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
     gap: 3rem;
     padding: 0.5rem;
     max-width: 100%;
