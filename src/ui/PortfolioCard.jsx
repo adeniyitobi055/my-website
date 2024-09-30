@@ -55,7 +55,7 @@ const Description = styled.div`
   justify-content: center;
   align-items: center;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), var(--color-red-700));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), var(--color-red-700));
   opacity: 0.8;
   color: white;
 

@@ -16,6 +16,7 @@ function App() {
     <DarkModeProvider>
       <BrowserRouter>
         <GlobalStyles />
+
         <Routes>
           <Route element={<AppLayout />}>
             <Route index element={<Navigate replace to="home" />} />

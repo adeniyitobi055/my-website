@@ -98,7 +98,7 @@ const StyledNavLink = styled(NavLink)`
     align-items: center;
     gap: 1.2rem;
 
-    color: var(--color-grey-600);
+    color: var(--color-grey-700);
     font-size: 1.6rem;
     padding: 1.2rem 2.4rem;
     transition: all 0.3s;

@@ -15,7 +15,7 @@ const P = styled.p`
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--color-grey-500);
+  color: var(--color-grey-700);
   padding-bottom: 20px;
   font-weight: 500;
 
@@ -32,7 +32,7 @@ const HeadingText = styled.p`
   letter-spacing: 1px;
   text-align: left;
   max-width: 700px;
-  color: var(--color-grey-600);
+  color: var(--color-grey-700);
   padding: 20px 0;
 
   @media screen and (max-width: 425px) and (min-width: 320px) {
@@ -54,7 +54,7 @@ const HeadingText = styled.p`
 
 const Text = styled.p`
   font-size: 40px;
-  color: var(--color-grey-600);
+  color: var(--color-grey-800);
   font-weight: 500;
   letter-spacing: 0.8px;
   /* max-width: 600px; */

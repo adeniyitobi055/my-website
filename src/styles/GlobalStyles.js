@@ -109,7 +109,7 @@ const GlobalStyles = createGlobalStyle`
 
     --color-gold-100:#CDB450;
     --color-gold-700: #504107;
-    --color-gold-900:#282003;
+    --color-gold-800:#282003;
 
     --color-gray-100:#a8a8a8;
   }

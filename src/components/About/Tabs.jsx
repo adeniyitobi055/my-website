@@ -7,6 +7,7 @@ const Tab = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  color: var(--color-grey-700);
 
   @media screen and (max-width: 425px) and (min-width: 320px) {
     gap: 10px;
@@ -24,6 +25,7 @@ const TabContent = styled.div`
   & span {
     font-size: 15px;
     color: var(--color-gold-100);
+    font-weight: 500;
   }
 
   & ul {

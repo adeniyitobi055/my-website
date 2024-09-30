@@ -7,12 +7,13 @@ const StyledAboutText = styled.div`
   gap: 25px;
   justify-content: center;
   align-items: flex-start;
+  color: var(--color-grey-700);
 `;
 
 const Text = styled.p`
   text-align: justify;
   max-width: 900px;
-  color: var(--color-grey-600);
+  /* color: var(--color-grey-600); */
 
   @media screen and (max-width: 425px) and (min-width: 320px) {
     width: 100%;

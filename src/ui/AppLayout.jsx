@@ -1,10 +1,12 @@
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 import Header from "./Header";
+import { useSwipeNavigation } from "../hooks/useSwipeNavigation";
 
 const StyledAppLayout = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100%;
 `;
 
 const Main = styled.main`
@@ -31,11 +33,13 @@ const Container = styled.div`
 `;
 
 function AppLayout() {
+  const swipeHandlers = useSwipeNavigation();
+
   return (
     <StyledAppLayout>
       <Header />
       <Main>
-        <Container>
+        <Container {...swipeHandlers}>
           <Outlet />
         </Container>
       </Main>

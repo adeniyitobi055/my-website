@@ -6,7 +6,7 @@ const StyledUserIcon = styled.div`
   font-weight: 500;
   align-items: center;
   font-size: 1.4rem;
-  color: var(--color-grey-600);
+  color: var(--color-grey-700);
   justify-content: flex-end;
   /* padding-top: 5rem; */
 

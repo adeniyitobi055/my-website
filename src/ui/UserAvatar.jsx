@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledUserIcon = styled.div`
@@ -8,6 +9,7 @@ const StyledUserIcon = styled.div`
   font-size: 1.4rem;
   color: var(--color-grey-600);
   margin-right: auto;
+  cursor: pointer;
 
   @media screen and (max-width: 425px) and (min-width: 320px) {
     & span {
@@ -27,8 +29,10 @@ const Avatar = styled.img`
 `;
 
 function UserAvatar() {
+  const navigate = useNavigate();
+
   return (
-    <StyledUserIcon>
+    <StyledUserIcon onClick={() => navigate("/home")}>
       <Avatar src="/avatar-image.jpg" alt="Avatar image" />
       <span>Oluwatobi Adeniyi</span>
     </StyledUserIcon>

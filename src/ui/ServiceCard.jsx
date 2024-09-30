@@ -17,9 +17,9 @@ const ServiceLayout = styled.div`
   }
 
   & p {
-    font-size: 15px;
-
+    font-size: 16px;
     margin-bottom: 10px;
+    font-weight: 400;
   }
 
   & a {
@@ -27,6 +27,7 @@ const ServiceLayout = styled.div`
     display: inline-block;
     font-size: 12px;
     margin-top: 20px;
+    font-weight: 400;
   }
 
   &:hover {
