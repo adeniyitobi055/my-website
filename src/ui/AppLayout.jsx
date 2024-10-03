@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 import Header from "./Header";
 import { useSwipeNavigation } from "../hooks/useSwipeNavigation";
+import { useState } from "react";
 
 const StyledAppLayout = styled.div`
   display: flex;
@@ -31,19 +32,24 @@ const Container = styled.div`
   display: flex;
   gap: 3.2rem;
 
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  opacity: 1;
-  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  transform: ${({ position }) => `translateX(${position}px)`};
 `;
 
 function AppLayout() {
   const swipeHandlers = useSwipeNavigation();
+  const [position, setPosition] = useState(0);
+
+  swipeHandlers.onSwipedLeft = () =>
+    setPosition((prev) => prev - window.innerWidth);
+  swipeHandlers.onSwipedRight = () =>
+    setPosition((prev) => prev - window.innerWidth);
 
   return (
     <StyledAppLayout>
       <Header />
       <Main>
-        <Container {...swipeHandlers}>
+        <Container {...swipeHandlers} position={position}>
           <Outlet />
         </Container>
       </Main>
