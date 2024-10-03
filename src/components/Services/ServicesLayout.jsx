@@ -39,6 +39,7 @@ const StyledServiceContainer = styled.div`
   max-width: 1200px;
   justify-content: center;
   align-items: center;
+  height: 100%;
 
   /*  & > *:nth-child(3) {
     grid-column: 1 / -1;
