@@ -38,22 +38,22 @@ const Container = styled.div`
 
   & > * {
     scroll-snap-align: start;
-    flex: 0 0 100vh;
+    flex: 0 0 100%;
   }
 
   transition: transform 0.3s ease-in-out, scale 0.3s ease-in-out;
-  transform: translateY(${({ translateY }) => translateY}px)
-    scale(${({ scale }) => scale});
+  transform: translateY(${({ translateY }) => translateY}px);
+  /* scale(${({ scale }) => scale}); */
 `;
 
 function AppLayout() {
-  const { swipeHandlers, translateY, scale } = useSwipeNavigation();
+  const { swipeHandlers, translateY } = useSwipeNavigation();
 
   return (
     <StyledAppLayout>
       <Header />
       <Main>
-        <Container {...swipeHandlers} translateY={translateY} scale={scale}>
+        <Container {...swipeHandlers} translateY={translateY}>
           <Outlet />
         </Container>
       </Main>
