@@ -43,7 +43,7 @@ function AppLayout() {
   swipeHandlers.onSwipedLeft = () =>
     setPosition((prev) => prev - window.innerWidth);
   swipeHandlers.onSwipedRight = () =>
-    setPosition((prev) => prev - window.innerWidth);
+    setPosition((prev) => prev + window.innerWidth);
 
   return (
     <StyledAppLayout>
