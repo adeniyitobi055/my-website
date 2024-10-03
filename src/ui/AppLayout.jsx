@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 import Header from "./Header";
 import { useSwipeNavigation } from "../hooks/useSwipeNavigation";
-import { useState } from "react";
 
 const StyledAppLayout = styled.div`
   display: flex;
@@ -27,29 +26,34 @@ const Main = styled.main`
 `;
 
 const Container = styled.div`
-  max-width: 120rem;
+  max-width: 100%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   gap: 3.2rem;
+  overflow-x: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 
-  transition: transform 0.3s ease-in-out;
-  transform: ${({ position }) => `translateX(${position}px)`};
+  & > * {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+  }
+
+  transition: transform 0.3s ease-in-out, scale 0.3s ease-in-out;
+  transform: translateY(${({ translateY }) => translateY}px)
+    scale(${({ scale }) => scale});
 `;
 
 function AppLayout() {
-  const swipeHandlers = useSwipeNavigation();
-  const [position, setPosition] = useState(0);
-
-  swipeHandlers.onSwipedLeft = () =>
-    setPosition((prev) => prev - window.innerWidth);
-  swipeHandlers.onSwipedRight = () =>
-    setPosition((prev) => prev + window.innerWidth);
+  const { swipeHandlers, translateY, scale } = useSwipeNavigation();
 
   return (
     <StyledAppLayout>
       <Header />
       <Main>
-        <Container {...swipeHandlers} position={position}>
+        <Container {...swipeHandlers} translateY={translateY} scale={scale}>
           <Outlet />
         </Container>
       </Main>
