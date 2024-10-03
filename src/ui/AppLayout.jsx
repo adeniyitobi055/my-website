@@ -30,6 +30,10 @@ const Container = styled.div`
   margin: 0 auto;
   display: flex;
   gap: 3.2rem;
+
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 1;
+  transform: translateX(0);
 `;
 
 function AppLayout() {
