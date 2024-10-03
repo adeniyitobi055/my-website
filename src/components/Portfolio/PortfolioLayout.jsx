@@ -13,6 +13,7 @@ const Main = styled.div`
   flex-direction: column;
   gap: 4rem;
   overflow: hidden;
+  height: 100vh;
 
   @media screen and (max-width: 425px) and (min-width: 320px) {
     height: 100vh;
@@ -55,6 +56,7 @@ const StyledPortfolioContainer = styled.div`
   max-width: 1200px;
   justify-content: center;
   align-items: center;
+  height: 100%;
 
   @media screen and (max-width: 425px) and (min-width: 320px) {
     display: flex;
@@ -62,7 +64,6 @@ const StyledPortfolioContainer = styled.div`
     gap: 1.5rem;
     max-width: 100%;
     width: 98%;
-    height: 100vh;
   }
 
   @media screen and (max-width: 768px) and (min-width: 426px) {
@@ -70,14 +71,12 @@ const StyledPortfolioContainer = styled.div`
     gap: 20px;
     width: 100%;
     max-width: 100%;
-    height: 100vh;
   }
 
   @media screen and (max-width: 1024px) and (min-width: 769px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
-    max-width: 100%;
   }
 `;
 

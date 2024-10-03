@@ -9,14 +9,7 @@ const Main = styled.div`
   gap: 6rem;
   overflow: hidden;
   width: 100%;
-
-  @media screen and (max-width: 425px) and (min-width: 320px) {
-    height: 100vh;
-  }
-
-  @media screen and (max-width: 1024px) and (min-width: 769px) {
-    height: 100vh;
-  }
+  height: 100vh;
 `;
 
 const StyledContactLayout = styled.div`
@@ -29,6 +22,7 @@ const StyledContactLayout = styled.div`
   max-width: 120rem;
   padding: 0 2rem;
   gap: 6rem;
+  height: 100%;
 
   @media screen and (max-width: 768px) and (min-width: 320px) {
     flex-direction: column;
@@ -36,7 +30,7 @@ const StyledContactLayout = styled.div`
     width: 100%;
     padding: 0;
     gap: 3rem;
-    height: 100vh;
+    height: 100%;
   }
 
   @media screen and (max-width: 1024px) and (min-width: 769px) {
@@ -45,7 +39,7 @@ const StyledContactLayout = styled.div`
     width: 100%;
     /* padding: 0; */
     gap: 6rem;
-    height: 100vh;
+    height: 100%;
   }
 `;
 
