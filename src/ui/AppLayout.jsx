@@ -6,7 +6,7 @@ import { useSwipeNavigation } from "../hooks/useSwipeNavigation";
 const StyledAppLayout = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 `;
 
 const Main = styled.main`
@@ -39,7 +39,7 @@ const Container = styled.div`
 
   & > * {
     scroll-snap-align: start;
-    flex: 0 0 100%;
+    /* flex: 0 0 100%; */
   }
 
   transition: transform 0.3s ease-in-out, scale 0.3s ease-in-out;
