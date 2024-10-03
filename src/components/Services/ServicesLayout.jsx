@@ -9,6 +9,14 @@ const Main = styled.div`
   flex-direction: column;
   gap: 4rem;
   overflow: hidden;
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    height: 100vh;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+    height: 100vh;
+  }
 `;
 
 const StyledServicesLayout = styled.div`
@@ -24,6 +32,7 @@ const StyledServicesLayout = styled.div`
 
   @media screen and (max-width: 425px) and (min-width: 320px) {
     flex-direction: column;
+    height: 100vh;
   }
 `;
 
