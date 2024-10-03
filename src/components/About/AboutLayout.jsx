@@ -26,12 +26,14 @@ const StyledAboutLayout = styled.div`
     flex-direction: column;
     gap: 3rem;
     max-width: 100%;
+    height: 100vh;
   }
 
   @media screen and (max-width: 768px) and (min-width: 426px) {
     flex-direction: column;
     gap: 4rem;
     max-width: 100%;
+    height: 100vh;
   }
 `;
 
