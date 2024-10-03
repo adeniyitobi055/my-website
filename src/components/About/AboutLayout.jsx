@@ -8,7 +8,7 @@ const Main = styled.div`
   flex-direction: column;
   gap: 4rem;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
 `;
 
 const StyledAboutLayout = styled.div`
