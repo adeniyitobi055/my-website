@@ -38,7 +38,7 @@ const Container = styled.div`
 
   & > * {
     scroll-snap-align: start;
-    flex: 0 0 100%;
+    flex: 0 0 100vh;
   }
 
   transition: transform 0.3s ease-in-out, scale 0.3s ease-in-out;
