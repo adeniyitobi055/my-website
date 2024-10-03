@@ -20,6 +20,7 @@ const StyledAboutLayout = styled.div`
   margin: auto;
   max-width: 170rem;
   gap: 6rem;
+  height: 100%;
 
   @media screen and (max-width: 425px) and (min-width: 320px) {
     flex-direction: column;
