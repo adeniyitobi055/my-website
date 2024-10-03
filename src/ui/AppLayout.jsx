@@ -14,14 +14,15 @@ const Main = styled.main`
   padding: 13rem 4.8rem 6.4rem;
   overflow: auto;
   height: 100%;
-  overflow: auto;
 
   @media screen and (max-width: 425px) and (min-width: 320px) {
     padding: 10.5rem 2.5rem 3.2rem;
+    height: 100vh;
   }
 
   @media screen and (max-width: 1024px) and (min-width: 769px) {
     padding: 11rem 3.5rem 4.2rem;
+    height: 100vh;
   }
 `;
 
