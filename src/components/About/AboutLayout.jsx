@@ -11,11 +11,11 @@ const Main = styled.div`
   height: 100%;
 
   @media screen and (max-width: 425px) {
-    height: 110vh;
+    height: 100%;
   }
 
   @media screen and (max-width: 768px) and (min-width: 426px) {
-    height: 110vh;
+    height: 100%;
   }
 `;
 
@@ -50,7 +50,7 @@ function AboutLayout() {
     <Main>
       <StyledHeading>About me</StyledHeading>
       <StyledAboutLayout>
-        <AboutImage />
+        {/* <AboutImage /> */}
         <AboutText />
       </StyledAboutLayout>
     </Main>
