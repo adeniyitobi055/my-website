@@ -19,7 +19,7 @@ function App() {
 
         <Routes>
           <Route element={<AppLayout />}>
-            <Route index element={<Navigate replace to="home" />} />
+            {/* <Route index element={<Navigate replace to="home" />} /> */}
             <Route path="home" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="services" element={<Services />} />

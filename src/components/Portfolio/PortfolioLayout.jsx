@@ -15,12 +15,8 @@ const Main = styled.div`
   overflow: hidden;
   height: 100%;
 
-  @media screen and (max-width: 425px) {
-    height: 100%;
-  }
-
-  @media screen and (max-width: 1024px) and (min-width: 769px) {
-    height: 100%;
+  @media screen and (max-width: 768px) {
+    height: 100vh;
   }
 `;
 

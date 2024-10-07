@@ -10,8 +10,10 @@ export const useSwipeNavigation = () => {
   const [isAtBottom, setIsAtBottom] = useState(false);
 
   const handleScroll = () => {
+    const threshold = 5;
     const isBottom =
-      window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      window.innerHeight + window.scrollY >=
+      document.body.scrollHeight - threshold;
     setIsAtBottom(isBottom);
   };
 
@@ -50,17 +52,21 @@ export const useSwipeNavigation = () => {
   });
 
   const navigateNext = () => {
+    const currentScrollY = window.scrollY;
     if (window.location.pathname === "/home") navigate("/about");
     else if (window.location.pathname === "/about") navigate("/services");
     else if (window.location.pathname === "/services") navigate("/portfolio");
     else if (window.location.pathname === "/portfolio") navigate("/contact");
+    window.scrollTo(0, currentScrollY);
   };
 
   const navigatePrevious = () => {
+    const currentScrollY = window.scrollY;
     if (window.location.pathname === "/contact") navigate("/portfolio");
     else if (window.location.pathname === "/portfolio") navigate("/services");
     else if (window.location.pathname === "/services") navigate("/about");
     else if (window.location.pathname === "/about") navigate("/home");
+    window.scrollTo(0, currentScrollY);
   };
 
   const resetScale = () => {

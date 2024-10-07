@@ -11,6 +11,7 @@ const ImageLayout = styled.div`
   outline: 2px solid var(--color-grey-100);
   position: relative;
   overflow: hidden;
+  height: 100%;
 
   &:hover img {
     transform: scale(1.1);
