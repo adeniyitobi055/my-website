@@ -50,13 +50,13 @@ const Container = styled.div`
 `;
 
 function AppLayout() {
-  const { swipeHandlers, translateY } = useSwipeNavigation();
+  // const { swipeHandlers, translateY } = useSwipeNavigation();
 
   return (
     <StyledAppLayout>
       <Header />
       <Main>
-        <Container {...swipeHandlers} translateY={translateY}>
+        <Container>
           <Outlet />
         </Container>
       </Main>
