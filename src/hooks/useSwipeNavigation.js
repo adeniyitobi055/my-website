@@ -9,19 +9,20 @@ export const useSwipeNavigation = () => {
   const [isNavigating, setIsNavigating] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isBottom =
-        window.innerHeight + window.scrollY >= document.body.offsetHeight;
-      setIsAtBottom(isBottom);
-    };
+  const handleScroll = () => {
+    const isBottom =
+      window.innerHeight + window.scrollY >= document.body.offsetHeight;
+    setIsAtBottom(isBottom);
+  };
 
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const swipeHandlers = useSwipeable({
-    onSwipedUp: () => {
+    onSwipedUp: (e) => {
+      e.preventDefault();
       if (!isNavigating && isAtBottom) {
         setScale(0.5);
         setTranslateY(-window.innerHeight);
@@ -32,7 +33,8 @@ export const useSwipeNavigation = () => {
         }, 300);
       }
     },
-    onSwipedDown: () => {
+    onSwipedDown: (e) => {
+      e.preventDefault();
       if (!isNavigating && isAtBottom) {
         setScale(0.5);
         setTranslateY(window.innerHeight);
