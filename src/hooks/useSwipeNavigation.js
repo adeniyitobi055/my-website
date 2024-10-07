@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
 
@@ -7,6 +7,18 @@ export const useSwipeNavigation = () => {
   const [scale, setScale] = useState(1);
   const [translateY, setTranslateY] = useState(0);
   const [isNavigating, setIsNavigating] = useState(false);
+  const [isAtBottom, setIsAtBottom] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      setIsAtBottom(isBottom);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const swipeHandlers = useSwipeable({
     onSwipedUp: () => {

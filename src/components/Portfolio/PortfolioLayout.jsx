@@ -16,11 +16,11 @@ const Main = styled.div`
   height: 100vh;
 
   @media screen and (max-width: 425px) and (min-width: 320px) {
-    height: 100vh;
+    height: 100%;
   }
 
   @media screen and (max-width: 1024px) and (min-width: 769px) {
-    height: 100vh;
+    height: 100%;
   }
 `;
 
@@ -42,7 +42,7 @@ const StyledPortfolioLayout = styled.div`
     gap: 1.5rem;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 `;
 
