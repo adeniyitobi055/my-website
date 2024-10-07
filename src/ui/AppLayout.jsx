@@ -7,6 +7,7 @@ const StyledAppLayout = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  height: 100%;
 `;
 
 const Main = styled.main`
@@ -14,13 +15,16 @@ const Main = styled.main`
   padding: 13rem 4.8rem 6.4rem;
   overflow: auto;
   flex-grow: 1;
+  margin-top: 7rem;
 
   @media screen and (max-width: 425px) {
     padding: 10.5rem 2.5rem 3.2rem;
+    margin-top: 6rem;
   }
 
   @media screen and (max-width: 1024px) and (min-width: 769px) {
     padding: 11rem 3.5rem 4.2rem;
+    margin-top: 6rem;
   }
 `;
 
