@@ -9,15 +9,13 @@ export const useSwipeNavigation = () => {
   const [isNavigating, setIsNavigating] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
 
-  const handleScroll = () => {
-    const threshold = 5;
-    const isBottom =
-      window.innerHeight + window.scrollY >=
-      document.body.scrollHeight - threshold;
-    setIsAtBottom(isBottom);
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      const isBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      setIsAtBottom(isBottom);
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
