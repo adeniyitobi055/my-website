@@ -13,13 +13,13 @@ const StyledHomeLayout = styled.div`
   gap: 6rem;
   height: 100vh;
 
-  @media screen and (max-width: 425px)  {
+  @media screen and (max-width: 425px) {
     flex-direction: column;
     justify-content: flex-start;
     gap: 3rem;
     padding: 0.5rem;
     max-width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 
   @media screen and (max-width: 768px) and (min-width: 426px) {
@@ -27,7 +27,7 @@ const StyledHomeLayout = styled.div`
     gap: 4rem;
     padding: 1rem;
     max-width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 `;
 
