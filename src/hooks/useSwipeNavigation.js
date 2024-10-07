@@ -12,7 +12,8 @@ export const useSwipeNavigation = () => {
   const handleScroll = () => {
     const threshold = 5;
     const isBottom =
-      window.innerHeight + window.scrollY >= document.body.scrollHeight - 5;
+      window.innerHeight + window.scrollY >=
+      document.body.scrollHeight - threshold;
     setIsAtBottom(isBottom);
   };
 
