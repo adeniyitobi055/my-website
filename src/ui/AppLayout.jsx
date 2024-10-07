@@ -7,6 +7,10 @@ const StyledAppLayout = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  @media screen and (max-width: 768px) {
+    height: 100vh;
+  }
 `;
 
 const Main = styled.main`
