@@ -15,13 +15,13 @@ const Main = styled.div`
   overflow: hidden;
   height: 100%;
 
-  @media screen and (max-width: 425px) {
+  /* @media screen and (max-width: 425px) {
     height: 110vh;
   }
 
   @media screen and (max-width: 1024px) and (min-width: 769px) {
     height: 110vh;
-  }
+  } */
 `;
 
 const StyledPortfolioLayout = styled.div`
