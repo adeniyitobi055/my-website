@@ -23,7 +23,7 @@ export const useSwipeNavigation = () => {
 
   const swipeHandlers = useSwipeable({
     onSwipedUp: () => {
-      if (!isNavigating) {
+      if (!isNavigating && isAtBottom) {
         setScale(0.5);
         setTranslateY(-window.innerHeight);
         setIsNavigating(true);
@@ -34,7 +34,7 @@ export const useSwipeNavigation = () => {
       }
     },
     onSwipedDown: () => {
-      if (!isNavigating) {
+      if (!isNavigating && isAtBottom) {
         setScale(0.5);
         setTranslateY(window.innerHeight);
         setIsNavigating(true);
