@@ -10,9 +10,6 @@ const Main = styled.div`
   overflow: hidden;
   width: 100%;
   height: 100%;
-
-  @media screen and(max-width:425px) {
-  }
 `;
 
 const StyledContactLayout = styled.div`

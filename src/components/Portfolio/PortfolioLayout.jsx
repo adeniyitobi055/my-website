@@ -14,10 +14,6 @@ const Main = styled.div`
   gap: 4rem;
   overflow: hidden;
   height: 100%;
-
-  @media screen and (max-width: 768px) {
-    height: 100vh;
-  }
 `;
 
 const StyledPortfolioLayout = styled.div`

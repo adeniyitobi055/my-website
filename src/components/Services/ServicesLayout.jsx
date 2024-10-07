@@ -10,14 +10,6 @@ const Main = styled.div`
   gap: 4rem;
   overflow: hidden;
   height: 100%;
-
-  @media screen and (max-width: 425px) {
-    height: 100%;
-  }
-
-  @media screen and (max-width: 768px) and (min-width: 426px) {
-    height: 110%;
-  }
 `;
 
 const StyledServicesLayout = styled.div`
