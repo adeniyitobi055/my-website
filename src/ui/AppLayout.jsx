@@ -21,12 +21,12 @@ const Main = styled.main`
 
   @media screen and (max-width: 425px) {
     padding: 10.5rem 2.5rem 3.2rem;
-    height: 100%;
+    height: 100vh;
   }
 
   @media screen and (max-width: 1024px) and (min-width: 769px) {
     padding: 11rem 3.5rem 4.2rem;
-    height: 100%;
+    height: 100vh;
   }
 `;
 
