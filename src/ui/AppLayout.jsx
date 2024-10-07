@@ -18,7 +18,7 @@ const Main = styled.main`
   margin-top: 7rem;
 
   @media screen and (max-width: 425px) {
-    padding: 10.5rem 2.5rem 0;
+    padding: 10.5rem 2.5rem 3.2rem;
     margin-top: 6rem;
   }
 
