@@ -8,7 +8,15 @@ const Main = styled.div`
   flex-direction: column;
   gap: 4rem;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
+
+  @media screen and (max-width: 425px) {
+    height: 110vh;
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 426px) {
+    height: 110vh;
+  }
 `;
 
 const StyledAboutLayout = styled.div`
@@ -22,7 +30,7 @@ const StyledAboutLayout = styled.div`
   gap: 6rem;
   height: 100%;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     flex-direction: column;
     gap: 3rem;
     max-width: 100%;

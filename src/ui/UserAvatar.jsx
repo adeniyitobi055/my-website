@@ -11,7 +11,7 @@ const StyledUserIcon = styled.div`
   margin-right: auto;
   cursor: pointer;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     & span {
       font-size: 1.2rem;
     }

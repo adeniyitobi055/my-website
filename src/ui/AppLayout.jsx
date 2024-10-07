@@ -15,7 +15,7 @@ const Main = styled.main`
   overflow: auto;
   height: 100%;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     padding: 10.5rem 2.5rem 3.2rem;
     height: 100%;
   }

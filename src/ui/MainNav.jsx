@@ -64,7 +64,7 @@ const NavList = styled.ul`
     transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
   }
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     /* display: ${({ isOpen }) => (isOpen ? "block" : "none")}; */
     position: fixed;
     top: 0;

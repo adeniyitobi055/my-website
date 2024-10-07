@@ -13,14 +13,14 @@ const Main = styled.div`
   flex-direction: column;
   gap: 4rem;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
-    height: 100%;
+  @media screen and (max-width: 425px) {
+    height: 110vh;
   }
 
   @media screen and (max-width: 1024px) and (min-width: 769px) {
-    height: 100%;
+    height: 110vh;
   }
 `;
 
@@ -35,7 +35,7 @@ const StyledPortfolioLayout = styled.div`
   padding: 0 2rem;
   gap: 6rem;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     flex-direction: column;
     max-width: 100%;
     padding: 0 0.5rem;
@@ -58,7 +58,7 @@ const StyledPortfolioContainer = styled.div`
   align-items: center;
   height: 100%;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;

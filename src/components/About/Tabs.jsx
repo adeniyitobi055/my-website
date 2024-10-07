@@ -9,7 +9,7 @@ const Tab = styled.div`
   gap: 15px;
   color: var(--color-grey-700);
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     gap: 10px;
   }
 `;
@@ -62,7 +62,7 @@ const ButtonContainer = styled.div`
   align-items: center;
   gap: 20px;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     gap: 13px;
     max-width: 100%;
     flex-wrap: wrap;
@@ -89,7 +89,7 @@ const Div = styled.div`
     color: var(--color-red-700);
   }
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
   }
 `;
 

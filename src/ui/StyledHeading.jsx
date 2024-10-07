@@ -8,7 +8,7 @@ const StyledHeading = styled.h1`
   font-weight: 400;
   padding: 0;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     font-size: 30px;
   }
 

@@ -10,7 +10,7 @@ const StyledUserIcon = styled.div`
   justify-content: flex-end;
   /* padding-top: 5rem; */
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px)  {
     gap: 0.7rem;
     font-weight: 400;
     font-size: 1rem;
@@ -37,7 +37,7 @@ const Image = styled.img`
   /* outline: 2px solid var(--color-grey-100); */
   opacity: 0.9;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px)  {
     width: 20rem;
   }
 

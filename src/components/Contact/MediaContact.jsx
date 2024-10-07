@@ -16,7 +16,7 @@ const Container = styled.div`
   /* width: 120rem; */
   max-width: 1200px;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     max-width: 100%;
     margin: 11px auto;
     width: 100%;
@@ -34,7 +34,7 @@ const Row = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     font-size: 1.45rem;
   }
 
@@ -52,7 +52,7 @@ const Icon = styled.div`
   color: var(--color-grey-600);
   margin-top: 0.5rem;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     font-size: 2rem;
   }
 
@@ -73,7 +73,7 @@ const IconsContainer = styled.div`
   /* justify-content: center; */
   /* align-items: center; */
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     height: 1.2rem;
   }
 
@@ -93,7 +93,7 @@ const Icons = styled.div`
     transform: translateY(-5px);
   }
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     font-size: 2.7rem;
   }
 `;

@@ -17,7 +17,7 @@ const Form = styled.form`
   justify-content: flex-start;
   align-items: flex-start;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     gap: 2rem;
     width: 100%;
     max-width: 100%;

@@ -6,7 +6,7 @@ const StyledDescription = styled.div`
   gap: 5px;
   /* margin-top: 2rem; */
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px)  {
     gap: 2.5px;
   }
 `;
@@ -19,7 +19,7 @@ const P = styled.p`
   padding-bottom: 20px;
   font-weight: 500;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px)  {
     font-size: 18px;
     padding-bottom: 10px;
     font-weight: 400;
@@ -35,7 +35,7 @@ const HeadingText = styled.p`
   color: var(--color-grey-700);
   padding: 20px 0;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     font-size: 13px;
     max-width: 500px;
     padding: 15px 0;
@@ -65,7 +65,7 @@ const Text = styled.p`
     color: var(--color-red-700);
   }
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px)  {
     font-size: 19px;
     font-weight: 500;
     text-align: left;

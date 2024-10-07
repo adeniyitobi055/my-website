@@ -15,7 +15,7 @@ const Text = styled.p`
   max-width: 900px;
   /* color: var(--color-grey-600); */
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     width: 100%;
     word-break: break-word;
     white-space: normal;

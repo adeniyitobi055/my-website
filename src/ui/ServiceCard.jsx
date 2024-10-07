@@ -36,7 +36,7 @@ const ServiceLayout = styled.div`
     color: white;
   }
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     width: 100%;
     padding: 20px;
     font-size: 6.5px;
@@ -93,7 +93,7 @@ const Icon = styled.div`
   font-size: 50px;
   margin-bottom: 30px;
 
-  @media screen and (max-width: 425px) and (min-width: 320px) {
+  @media screen and (max-width: 425px) {
     font-size: 25px;
     margin-bottom: 15px;
   }
