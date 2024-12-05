@@ -45,9 +45,9 @@ const StyledHomeLayout = styled.div`
 `;
 
 const SwipeArrow = styled.div`
-	position: fixed;
+	// position: fixed;
 	bottom: 20px; /* Adjust based on your design */
-	left: 40%;
+	margin: 0 auto;
 	transform: translateX(-50%);
 	font-size: 2rem;
 	animation: ${bounce} 2s infinite;
