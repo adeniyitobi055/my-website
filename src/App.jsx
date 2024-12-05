@@ -19,12 +19,12 @@ function App() {
 
 				<Routes>
 					<Route element={<AppLayout />}>
-						<Route index element={<Navigate replace to="home" />} />
-						<Route path="home" element={<Home />} />
-						<Route path="about" element={<About />} />
-						<Route path="services" element={<Services />} />
-						<Route path="portfolio" element={<Portfolio />} />
-						<Route path="contact" element={<Contact />} />
+						<Route index element={<Navigate replace to="/home" />} />
+						<Route path="/home" element={<Home />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/services" element={<Services />} />
+						<Route path="/portfolio" element={<Portfolio />} />
+						<Route path="/contact" element={<Contact />} />
 						<Route path="*" element={<PageNotFound />} />
 					</Route>
 				</Routes>
