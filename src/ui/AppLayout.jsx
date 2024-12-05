@@ -68,7 +68,7 @@ function AppLayout() {
 	const currentIndex = pages.indexOf(location.pathname.replace("/", ""));
 
 	const swipeHandlers = useSwipeable({
-		onSwipedUp: () => {
+		onSwipedLeft: () => {
 			const container = containerRef.current;
 			/* if (container) {
 				console.log("OnSwipedUp:", {
@@ -87,7 +87,7 @@ function AppLayout() {
 				}
 			}
 		},
-		onSwipedDown: () => {
+		onSwipedRight: () => {
 			const container = containerRef.current;
 			/* if (container) {
 				console.log("OnSwipedDown:", {
