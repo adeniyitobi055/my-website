@@ -47,13 +47,6 @@ const Container = styled.div`
 		flex: 0 0 100%;
 	}
 
-	// @media screen and (min-width: 1025px) {
-	// 	flex-direction: row; /* Horizontal layout for larger screens */
-	// 	overflow-y: hidden;
-	// 	overflow-x: auto; /* Enable horizontal scrolling */
-	// 	scroll-snap-type: x mandatory; /* Snap horizontally */
-	// }
-
 	transition: transform 0.3s ease-in-out, scale 0.3s ease-in-out;
 	// transform: translateY(${({ translateY }) => translateY}px);
 `;
