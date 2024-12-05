@@ -78,8 +78,7 @@ function AppLayout() {
 			} */
 			if (
 				container &&
-				container.scrollTop + container.clientHeight >=
-					container.scrollHeight - 5
+				container.scrollTop + container.clientHeight >= container.scrollHeight
 			) {
 				// At the bottom of the page, navigate to the next page
 				if (currentIndex < pages.length - 1) {
@@ -96,7 +95,7 @@ function AppLayout() {
 					scrollHeight: container.scrollHeight,
 				});
 			} */
-			if (container && container.scrollTop <= 5) {
+			if (container && container.scrollTop <= 0) {
 				// At the top of the page, navigate to the previous page
 				if (currentIndex > 0) {
 					navigate(`/${pages[currentIndex - 1]}`);
