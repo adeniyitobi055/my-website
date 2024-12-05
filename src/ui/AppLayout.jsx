@@ -10,6 +10,7 @@ const StyledAppLayout = styled.div`
 	flex-direction: column;
 	min-height: 100vh;
 	height: 100%;
+	background-color: var(--color-grey-50);
 `;
 
 const Main = styled.main`
