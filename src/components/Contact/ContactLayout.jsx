@@ -73,6 +73,16 @@ const SwipeArrow = styled.div`
 	svg {
 		font-size: 2rem;
 	}
+
+	/* Media query for tablets and phones */
+	@media screen and (max-width: 768px) {
+		display: flex; /* Ensure the arrow is visible */
+	}
+
+	/* Media query for larger screens (desktops) */
+	@media screen and (min-width: 1024px) {
+		display: none; /* Hide the arrow on desktop screens */
+	}
 `;
 
 function ContactLayout() {
