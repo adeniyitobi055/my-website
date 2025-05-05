@@ -1,112 +1,100 @@
-import React from "react";
+import { easeInOut, easeOut, motion } from "framer-motion";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import Header from "./Header";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Services from "../pages/Services";
 import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
-import Header from "./Header";
 
-const StyledAppLayout = styled.div`
+// Styled Components for Mobile Layout
+const StyledMobileLayout = styled.div`
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	background-color: var(--color-grey-50);
 `;
 
-const Main = styled.main`
+const MobileContainer = styled.div`
 	flex-grow: 1;
-	padding: ${({ isMobile }) =>
-		isMobile ? "0.7rem 1rem 1.2rem" : "13rem 4.8rem 6.4rem"};
-	margin-top: ${({ isMobile }) => (isMobile ? "6rem" : "7rem")};
+	padding: 10.5rem 2.5rem 3.2rem;
+	margin-top: 6rem;
 	display: flex;
 	flex-direction: column;
 	gap: 3.2rem;
 	overflow-y: auto;
 	scroll-behavior: smooth;
 
-	@media screen and (max-width: 1024px) and (min-width: 769px) {
-		padding: 11rem 3.5rem 4.2rem;
-		margin-top: 6rem;
+	@media screen and (max-width: 425px) {
+		padding: 0.5rem 1.5rem 1.2rem;
 	}
 `;
 
-const Section = styled(motion.section)`
-	min-height: ${({ isMobile }) => (isMobile ? "100vh" : "auto")};
+const Section = styled(motion.div)`
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 20px;
 	box-sizing: border-box;
-
-	@media screen and (min-width: 769px) {
-		padding: 40px;
-	}
 `;
 
-function AppLayout({ isMobile }) {
-	const sectionVariants = {
+export default function MobileLayout() {
+	// Animation variants for sections
+	const sectionVariant = {
 		hidden: { opacity: 0, y: 50 },
 		visible: {
 			opacity: 1,
 			y: 0,
-			transition: { duration: 0.5, ease: "easeOut" },
+			transition: { duration: 0.5, ease: easeInOut },
 		},
 	};
 
 	return (
-		<StyledAppLayout>
+		<StyledMobileLayout>
 			<Header />
-			<Main isMobile={isMobile}>
+			<MobileContainer>
 				<Section
 					id="home"
-					isMobile={isMobile}
-					variants={sectionVariants}
+					variants={sectionVariant}
 					initial="hidden"
-					whileInView="visible"
+					whileInView={"visible"}
 					viewport={{ once: true, amount: 0.3 }}>
 					<Home />
 				</Section>
 				<Section
 					id="about"
-					isMobile={isMobile}
-					variants={sectionVariants}
+					variants={sectionVariant}
 					initial="hidden"
-					whileInView="visible"
+					whileInView={"visible"}
 					viewport={{ once: true, amount: 0.3 }}>
 					<About />
 				</Section>
 				<Section
 					id="services"
-					isMobile={isMobile}
-					variants={sectionVariants}
+					variants={sectionVariant}
 					initial="hidden"
-					whileInView="visible"
+					whileInView={"visible"}
 					viewport={{ once: true, amount: 0.3 }}>
 					<Services />
 				</Section>
 				<Section
 					id="portfolio"
-					isMobile={isMobile}
-					variants={sectionVariants}
+					variants={sectionVariant}
 					initial="hidden"
-					whileInView="visible"
+					whileInView={"visible"}
 					viewport={{ once: true, amount: 0.3 }}>
 					<Portfolio />
 				</Section>
 				<Section
 					id="contact"
-					isMobile={isMobile}
-					variants={sectionVariants}
+					variants={sectionVariant}
 					initial="hidden"
-					whileInView="visible"
+					whileInView={"visible"}
 					viewport={{ once: true, amount: 0.3 }}>
 					<Contact />
 				</Section>
-			</Main>
-		</StyledAppLayout>
+			</MobileContainer>
+		</StyledMobileLayout>
 	);
 }
-
-export default AppLayout;

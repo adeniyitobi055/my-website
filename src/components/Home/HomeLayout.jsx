@@ -1,19 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import ImageContainer from "./ImageContainer";
 import Description from "./Description";
-import { FaArrowRightLong } from "react-icons/fa6";
-
-const bounce = keyframes`
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-`;
 
 const StyledHomeLayout = styled.div`
 	background-color: var(--color-grey-50);
@@ -44,44 +31,11 @@ const StyledHomeLayout = styled.div`
 	}
 `;
 
-const SwipeArrow = styled.div`
-	// position: fixed;
-	bottom: 20px; /* Adjust based on your design */
-	margin: 0 auto;
-	transform: translateX(-50%);
-	font-size: 2rem;
-	animation: ${bounce} 2s infinite;
-	cursor: pointer;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-	/* Add an icon or custom arrow styles */
-	svg {
-		font-size: 2rem;
-	}
-
-	/* Media query for tablets and phones */
-	@media screen and (max-width: 768px) {
-		display: flex; /* Ensure the arrow is visible */
-	}
-
-	/* Media query for larger screens (desktops) */
-	@media screen and (min-width: 1024px) {
-		display: none; /* Hide the arrow on desktop screens */
-	}
-`;
-
 function HomeLayout() {
 	return (
 		<StyledHomeLayout>
 			<ImageContainer />
 			<Description />
-			<SwipeArrow>
-				<FaArrowRightLong />
-				<span style={{ fontSize: "10px" }}>Swipe to the left</span>
-			</SwipeArrow>
 		</StyledHomeLayout>
 	);
 }
