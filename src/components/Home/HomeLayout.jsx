@@ -12,7 +12,6 @@ const StyledHomeLayout = styled.div`
 	max-width: 170rem;
 	gap: 6rem;
 	height: 100%;
-	overflow: hidden;
 
 	@media screen and (max-width: 425px) {
 		flex-direction: column;
@@ -21,7 +20,6 @@ const StyledHomeLayout = styled.div`
 		padding: 0.5rem;
 		max-width: 100%;
 		height: 80vh;
-		overflow: hidden;
 	}
 
 	@media screen and (max-width: 768px) and (min-width: 426px) {

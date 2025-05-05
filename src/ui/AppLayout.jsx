@@ -23,7 +23,7 @@ const Main = styled.main`
 	display: flex;
 	flex-direction: column;
 	gap: 3.2rem;
-	overflow-y: auto;
+	overflow-y: hidden;
 	scroll-behavior: smooth;
 
 	@media screen and (max-width: 1024px) and (min-width: 769px) {
