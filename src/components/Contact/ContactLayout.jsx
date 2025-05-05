@@ -6,7 +6,7 @@ import MediaContact from "./MediaContact";
 const Main = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 6rem;
+	gap: 1.5rem;
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
