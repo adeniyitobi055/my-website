@@ -2,7 +2,6 @@ import styled from "styled-components";
 import StyledHeading from "../../ui/StyledHeading";
 import ServiceCard from "../../ui/ServiceCard";
 import { FaDatabase, FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
 import { SiNestjs } from "react-icons/si";
 import { MdOutlineSecurity } from "react-icons/md";
 
@@ -29,6 +28,10 @@ const StyledServicesLayout = styled.div`
 	@media screen and (max-width: 425px) {
 		flex-direction: column;
 	}
+
+	@media screen and (min-width: 1440px) {
+		max-width: 100rem;
+	}
 `;
 
 const StyledServiceContainer = styled.div`
@@ -37,7 +40,7 @@ const StyledServiceContainer = styled.div`
 	grid-template-rows: repeat(2, auto);
 	grid-gap: 30px;
 	margin: 50px auto;
-	width: 120rem;
+	width: 110rem;
 	max-width: 1200px;
 	justify-content: center;
 	align-items: center;
@@ -110,13 +113,6 @@ function ServicesLayout() {
 						linkText={"Learn More"}
 						link={"https://github.com/adeniyitobi055/school_management"}
 					/>
-					{/* <ServiceCard
-						icon={<FaNodeJs />}
-						title="Integrating Node with React"
-						description="Seamlessly integrate Node with React to build a scalable, high-performance web application focused on delivering an exceptional user experience. Also able to connect to cross platform app development like supabase."
-						linkText="Learn More"
-						link="https://github.com/adeniyitobi055/the-wild-oasis"
-					/> */}
 				</StyledServiceContainer>
 			</StyledServicesLayout>
 		</Main>
