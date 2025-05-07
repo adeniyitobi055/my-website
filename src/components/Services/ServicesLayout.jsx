@@ -78,7 +78,7 @@ function ServicesLayout() {
 					<ServiceCard
 						icon={<FaReact />}
 						title="Front-End Development with React"
-						description=" Build highly interactive, dynamic web applications using the React JavaScript library. Implement efficient user interfaces for complex, data-driven experiences while maintaining seamless user interaction."
+						description=" Build highly interactive, dynamic web applications using the React JavaScript library. Implement efficient user interfaces for complex, data-driven experiences while maintaining seamless user interactions."
 						link="https://github.com/adeniyitobi055/oasis-library"
 						linkText="Learn More"
 					/>
