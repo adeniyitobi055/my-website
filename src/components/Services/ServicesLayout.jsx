@@ -28,10 +28,6 @@ const StyledServicesLayout = styled.div`
 	@media screen and (max-width: 425px) {
 		flex-direction: column;
 	}
-
-	@media screen and (min-width: 1440px) {
-		max-width: 100rem;
-	}
 `;
 
 const StyledServiceContainer = styled.div`
