@@ -21,7 +21,7 @@ const StyledContactLayout = styled.div`
 	margin: auto;
 	max-width: 120rem;
 	padding: 0 2rem;
-	gap: 6rem;
+	gap: 2rem;
 	height: 100%;
 
 	@media screen and (max-width: 768px) and (min-width: 320px) {

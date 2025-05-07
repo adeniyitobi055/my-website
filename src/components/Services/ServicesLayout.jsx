@@ -3,6 +3,7 @@ import StyledHeading from "../../ui/StyledHeading";
 import ServiceCard from "../../ui/ServiceCard";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
+import { SiNestjs } from "react-icons/si";
 
 const Main = styled.div`
 	display: flex;
@@ -21,7 +22,7 @@ const StyledServicesLayout = styled.div`
 	margin: auto;
 	max-width: 120rem;
 	padding: 0 2rem;
-	gap: 6rem;
+	gap: 2rem;
 	height: 100%;
 
 	@media screen and (max-width: 425px) {
@@ -41,11 +42,11 @@ const StyledServiceContainer = styled.div`
 	align-items: center;
 	height: 100%;
 
-	/*  & > *:nth-child(3) {
-    grid-column: 1 / -1;
-    justify-content: center;
-    width: 50%;
-  } */
+	& > *:nth-child(3) {
+		grid-column: 1 / -1;
+		justify-content: center;
+		width: 50%;
+	}
 
 	@media screen and (max-width: 425px) {
 		width: 100%;
@@ -76,17 +77,26 @@ function ServicesLayout() {
 				<StyledServiceContainer>
 					<ServiceCard
 						icon={<FaReact />}
-						title="Front-End Development with React.js"
+						title="Front-End Development with ReactJS"
 						description=" Build highly interactive, dynamic web applications using the React JavaScript library. Implement efficient user interfaces for complex, data-driven experiences while maintaining seamless user interaction."
-						link="https://www.hotjar.com/web-app-design/"
-						linkText="Learn more"
+						link="https://github.com/adeniyitobi055/oasis-library"
+						linkText="Learn More"
+					/>
+					<ServiceCard
+						icon={<SiNestjs />}
+						title={"Back-End Development with NestJS"}
+						description={
+							"Develop scalable, high-performance server-side applications using NestJS. Handle asynchronous operations, build APIs, and manage data with minimal overhead, ensuring real-time performance for web applications."
+						}
+						linkText={"Learn More"}
+						link={"https://github.com/adeniyitobi055/school_management"}
 					/>
 					<ServiceCard
 						icon={<FaNodeJs />}
-						title="Back-End Development with Node.js"
-						description="Develop scalable, high-performance server-side applications using Node.js. Handle asynchronous operations, build APIs, and manage data with minimal overhead, ensuring real-time performance for web applications."
-						linkText="Learn more"
-						link="https://www.hotjar.com/web-app-design/"
+						title="Integrating NodeJS with ReactJS"
+						description="Seamlessly integrated Node.js with React.js to build a scalable, high-performance web application focused on delivering an exceptional user experience."
+						linkText="Learn More"
+						link="https://github.com/adeniyitobi055/the-wild-oasis"
 					/>
 				</StyledServiceContainer>
 			</StyledServicesLayout>

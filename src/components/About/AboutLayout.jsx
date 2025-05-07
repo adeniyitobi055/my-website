@@ -26,7 +26,7 @@ const StyledAboutLayout = styled.div`
 	justify-content: center;
 	margin: auto;
 	max-width: 170rem;
-	gap: 6rem;
+	gap: 2rem;
 	height: 100%;
 
 	@media screen and (max-width: 425px) {

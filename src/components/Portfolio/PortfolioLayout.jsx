@@ -25,7 +25,7 @@ const StyledPortfolioLayout = styled.div`
 	margin: auto;
 	max-width: 120rem;
 	padding: 0 2rem;
-	gap: 6rem;
+	gap: 2rem;
 
 	@media screen and (max-width: 425px) {
 		flex-direction: column;
