@@ -13,7 +13,7 @@ const StyledHomeLayout = styled.div`
 	gap: 2rem;
 	height: 100%;
 
-	@media screen and (max-width: 425px) {
+	@media screen and (max-width: 426px) {
 		flex-direction: column;
 		justify-content: flex-start;
 		gap: 3rem;

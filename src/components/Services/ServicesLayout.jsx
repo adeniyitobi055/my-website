@@ -44,7 +44,7 @@ const StyledServiceContainer = styled.div`
 		width: 50%;
 	} */
 
-	@media screen and (max-width: 425px) {
+	@media screen and (max-width: 426px) {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -54,7 +54,7 @@ const StyledServiceContainer = styled.div`
 	@media screen and (max-width: 768px) and (min-width: 426px) {
 		width: 100%;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		margin: 25px auto;
 	}
 

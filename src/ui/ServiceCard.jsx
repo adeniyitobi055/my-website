@@ -39,10 +39,11 @@ const ServiceLayout = styled.div`
 		color: white;
 	}
 
-	@media screen and (max-width: 425px) {
+	@media screen and (max-width: 426px) {
 		width: 100%;
 		padding: 20px;
 		font-size: 6.5px;
+		height: 350px;
 
 		& h3 {
 			font-size: 18px;
@@ -57,6 +58,7 @@ const ServiceLayout = styled.div`
 		& a {
 			font-size: 10px;
 			margin-top: 10px;
+			padding-top: 40px;
 		}
 	}
 
