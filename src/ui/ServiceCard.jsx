@@ -30,6 +30,7 @@ const ServiceLayout = styled.div`
 		font-size: 12px;
 		padding-top: 20px;
 		font-weight: 400;
+		padding-bottom: 40px;
 	}
 
 	&:hover {
