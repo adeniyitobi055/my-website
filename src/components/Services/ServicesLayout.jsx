@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import StyledHeading from "../../ui/StyledHeading";
 import ServiceCard from "../../ui/ServiceCard";
-import { FaReact } from "react-icons/fa";
+import { FaDatabase, FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiNestjs } from "react-icons/si";
+import { MdOutlineSecurity } from "react-icons/md";
 
 const Main = styled.div`
 	display: flex;
@@ -42,11 +43,11 @@ const StyledServiceContainer = styled.div`
 	align-items: center;
 	height: 100%;
 
-	& > *:nth-child(3) {
+	/* & > *:nth-child(3) {
 		grid-column: 1 / -1;
 		justify-content: center;
 		width: 50%;
-	}
+	} */
 
 	@media screen and (max-width: 425px) {
 		width: 100%;
@@ -77,27 +78,45 @@ function ServicesLayout() {
 				<StyledServiceContainer>
 					<ServiceCard
 						icon={<FaReact />}
-						title="Front-End Development with ReactJS"
+						title="Front-End Development with React"
 						description=" Build highly interactive, dynamic web applications using the React JavaScript library. Implement efficient user interfaces for complex, data-driven experiences while maintaining seamless user interaction."
 						link="https://github.com/adeniyitobi055/oasis-library"
 						linkText="Learn More"
 					/>
 					<ServiceCard
 						icon={<SiNestjs />}
-						title={"Back-End Development with NestJS"}
+						title={"Back-End Development with Nest"}
 						description={
-							"Develop scalable, high-performance server-side applications using NestJS. Handle asynchronous operations, build APIs, and manage data with minimal overhead, ensuring real-time performance for web applications."
+							"Develop scalable, high-performance server-side applications using Nest.js. Handle asynchronous operations, build APIs, and manage data with minimal overhead, ensuring real-time performance for web applications."
 						}
 						linkText={"Learn More"}
 						link={"https://github.com/adeniyitobi055/school_management"}
 					/>
 					<ServiceCard
+						icon={<MdOutlineSecurity />}
+						title={"Authentication & Authorization Systems"}
+						description={
+							"Implement secure user authentication and role-based access control (RBAC) using JWT, or session-based strategies in full-stack applications. Ensure data protection and secure user management."
+						}
+						linkText={"Learn More"}
+						link={"https://github.com/adeniyitobi055/school_management"}
+					/>
+					<ServiceCard
+						icon={<FaDatabase />}
+						title={"Database Design & Optimization with MySQL"}
+						description={
+							"Design efficient relational database schemas using MySQL. Implement query optimization, indexing, and migration strategies to ensure fast, reliable, and scalable data operations."
+						}
+						linkText={"Learn More"}
+						link={"https://github.com/adeniyitobi055/school_management"}
+					/>
+					{/* <ServiceCard
 						icon={<FaNodeJs />}
-						title="Integrating NodeJS with ReactJS"
-						description="Seamlessly integrated Node.js with React.js to build a scalable, high-performance web application focused on delivering an exceptional user experience."
+						title="Integrating Node with React"
+						description="Seamlessly integrate Node with React to build a scalable, high-performance web application focused on delivering an exceptional user experience. Also able to connect to cross platform app development like supabase."
 						linkText="Learn More"
 						link="https://github.com/adeniyitobi055/the-wild-oasis"
-					/>
+					/> */}
 				</StyledServiceContainer>
 			</StyledServicesLayout>
 		</Main>
