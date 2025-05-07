@@ -20,8 +20,6 @@ const StyledServicesLayout = styled.div`
 	align-items: center;
 	justify-content: center;
 	margin: auto;
-	max-width: 120rem;
-	padding: 0 2rem;
 	gap: 2rem;
 	height: 100%;
 
@@ -36,8 +34,6 @@ const StyledServiceContainer = styled.div`
 	grid-template-rows: repeat(2, auto);
 	grid-gap: 30px;
 	margin: 50px auto;
-	width: 110rem;
-	max-width: 1200px;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
