@@ -98,6 +98,12 @@ const Icons = styled.div`
 	}
 `;
 
+const ButtonContainer = styled.div`
+	display: flex;
+	gap: 2.5rem;
+	justify-content: start;
+`;
+
 function MediaContact() {
 	return (
 		<Container>
@@ -147,11 +153,21 @@ function MediaContact() {
 					</a>
 				</Icons>
 			</IconsContainer>
-			<a href="/Oluwatobi Adedeji CV.pdf" download="Oluwatobi Adedeji CV.pdf">
-				<Button type="submit" isActive>
-					Download CV
-				</Button>
-			</a>
+			<ButtonContainer>
+				<a
+					href="/Oluwatobi Adedeji CV.pdf"
+					target="_blank"
+					rel="noopener noreferrer">
+					<Button type="submit" isActive>
+						View CV
+					</Button>
+				</a>
+				<a href="/Oluwatobi Adedeji CV.pdf" download="Oluwatobi Adedeji CV.pdf">
+					<Button type="submit" isActive>
+						Download CV
+					</Button>
+				</a>
+			</ButtonContainer>
 		</Container>
 	);
 }

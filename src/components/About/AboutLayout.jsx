@@ -8,6 +8,7 @@ const Main = styled.div`
 	gap: 1.5rem;
 	overflow: hidden;
 	height: 100vh;
+	max-width: 170rem;
 
 	@media screen and (max-width: 425px) {
 		height: 100vh;
@@ -25,7 +26,6 @@ const StyledAboutLayout = styled.div`
 	align-items: center;
 	justify-content: center;
 	margin: auto;
-	max-width: 170rem;
 	gap: 2rem;
 	height: 100%;
 
@@ -34,6 +34,7 @@ const StyledAboutLayout = styled.div`
 		gap: 3rem;
 		max-width: 100%;
 		height: 100%;
+		max-width: 100%;
 	}
 
 	@media screen and (max-width: 768px) and (min-width: 426px) {

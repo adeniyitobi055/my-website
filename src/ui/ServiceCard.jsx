@@ -10,7 +10,8 @@ const ServiceLayout = styled.div`
 	transition: background 0.5s, transform 0.5s;
 	margin: auto;
 	color: var(--color-grey-0);
-	height: 380px;
+	height: 400px;
+	width: 58rem;
 
 	& h3 {
 		font-size: 25px;

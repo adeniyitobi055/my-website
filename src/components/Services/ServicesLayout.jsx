@@ -30,10 +30,10 @@ const StyledServicesLayout = styled.div`
 
 const StyledServiceContainer = styled.div`
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	grid-template-columns: repeat(2, minmax(220px, 1fr));
 	grid-template-rows: repeat(2, auto);
 	grid-gap: 30px;
-	margin: 50px auto;
+	margin: 30px auto;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
