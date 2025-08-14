@@ -155,14 +155,14 @@ function MediaContact() {
 			</IconsContainer>
 			<ButtonContainer>
 				<a
-					href="/Oluwatobi Adedeji CV.pdf"
+					href="/Oluwatobi-Adedeji-CV.pdf"
 					target="_blank"
 					rel="noopener noreferrer">
 					<Button type="submit" isActive>
 						View CV
 					</Button>
 				</a>
-				<a href="/Oluwatobi Adedeji CV.pdf" download="Oluwatobi Adedeji CV.pdf">
+				<a href="/Oluwatobi-Adedeji-CV.pdf" download="Oluwatobi-Adedeji-CV.pdf">
 					<Button type="submit" isActive>
 						Download CV
 					</Button>
