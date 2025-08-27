@@ -29,11 +29,12 @@ const P = styled.p`
 
 const HeadingText = styled.p`
 	font-size: 17px;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 	text-align: left;
 	max-width: 700px;
 	color: var(--color-grey-700);
 	padding: 20px 0;
+	font-weight: 500;
 
 	@media screen and (max-width: 425px) {
 		font-size: 14px;
@@ -63,6 +64,7 @@ const Text = styled.p`
 
 	& span {
 		color: var(--color-brand-600);
+		font-weight: 600;
 	}
 
 	@media screen and (max-width: 425px) {
@@ -87,7 +89,7 @@ function Description() {
 			<Text as={"h1"}>
 				Hi, I'm <span>Oluwatobi Adeniyi</span>
 			</Text>
-			<Text>a Developer</Text>
+			<Text>a Software Engineer</Text>
 			<HeadingText>
 				Driven by excellence and efficiency, I develop applications that fulfill
 				user requirements and endure the challenges of time.

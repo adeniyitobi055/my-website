@@ -5,7 +5,6 @@ import StyledHeading from "../../ui/StyledHeading";
 const Main = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 1.5rem;
 	overflow: hidden;
 	height: 100vh;
 	max-width: 170rem;

@@ -41,7 +41,9 @@ const GlobalStyles = createGlobalStyle`
     --color-silver-700:#493003;
     --color-silver-900:#474747;
 
-    --color-gold-100:#CDB450;
+    // --color-gold-100:#CDB450;
+    // --color-gold-100:#CDB450;
+    --color-gold-100: #92770bff;
     --color-gold-700: #504107;
     --color-gold-800:#282003;
 

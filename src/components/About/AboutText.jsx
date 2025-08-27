@@ -47,17 +47,23 @@ function AboutText() {
 	return (
 		<StyledAboutText>
 			<Text>
-				I'm a passionate software engineer with a solid background in
-				JavaScript, React, Node, MySQL and other third party libraries such as
-				React query, Taillwindcss and even back-end hosting services like
-				supabase used to enhance performance.
+				With a keen eye for detail and a solid foundation from Holberton School,
+				I craft responsive, intuitive software solutions using React.js,
+				TypeScript, Nest.js | Node.js, MySQL, and more. My approach combines
+				technical precision with a user-focused mindset—refining experiences
+				that not only work well but feel right.
 				<br />
 				<br />
-				My experience spans across various industries, from finance, academics
-				and management systems e.g Library Managament Sysytem, Hotel Management
-				System. I'm committed to continuous learning and keep up with the latest
-				industry trends to ensure that the solutions I develop are not only
-				effective but also future-proof.
+				At Euro Scholars Poland, I empowered students to navigate the tech
+				landscape, helping build systems that impact Africa with accuracy and
+				relevance. Passionate about continuous learning and collaboration, I
+				bring integrity, empathy, and clarity into every team and product I work
+				with.
+				<br />
+				<br />
+				Based in Nigeria and open to remote opportunities, I also enjoy
+				mentoring young developers and exploring how design and development
+				shape human experience.
 			</Text>
 			<Tabs />
 		</StyledAboutText>
